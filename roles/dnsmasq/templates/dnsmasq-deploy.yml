@@ -26,7 +26,7 @@ spec:
           operator: Exists
       containers:
         - name: dnsmasq
-          image: "{{ dnsmasq_image_repo }}:{{ dnsmasq_image_tag }}"
+          image: "{{ dnsmasq_image_repo }}"
           imagePullPolicy: {{ k8s_image_pull_policy }}
           command:
             - dnsmasq
